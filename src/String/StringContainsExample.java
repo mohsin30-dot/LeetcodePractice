@@ -18,9 +18,21 @@ public class StringContainsExample {
 
         //indexOf return -1 if String does not contain specified word
         if(word.indexOf("World") != -1){
-            System.err.printf("Yes 'Hello World' contains word 'World'");
+            System.err.printf("Yes '%s' contains word 'World' %n" , word);
+
+
         }else{
-            System.err.printf("Sorry 'Hello World' does not contains word 'World'" );
+            System.err.printf("Sorry '%s' does not contains word 'World' %n" );
+        }
+
+        //contains method return boolean true if String contains specified word
+
+
+
+        if(word.contains("Hello")){
+            System.err.printf("Yes 'Hello World' contains word 'Hello'");
+        }else{
+            System.err.printf("Sorry 'Hello World' does not contains word 'Hello'" );
         }
 
 
